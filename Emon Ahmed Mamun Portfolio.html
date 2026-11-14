@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emon Ahmed Mamun — Graphics & Apparel Designer | Lead Trainer</title>
+  <meta name="description" content="Official Portfolio of Emon Ahmed Mamun — Graphics Designer, Apparel & Textile Artwork Specialist, and Lead Trainer of Computer Operation & Graphic Design." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Inter, Plus Jakarta Sans & Instrument Serif -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'sans-serif'],
+            serif: ['Instrument Serif', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f4f7f6',
+              100: '#e3ebe8',
+              200: '#c7d8d2',
+              300: '#9fbcb3',
+              400: '#729b8f',
+              500: '#517f73',
+              600: '#3e655b',
+              700: '#34524b',
+              800: '#2c433e',
+              900: '#273935',
+            },
+            accent: {
+              DEFAULT: '#d97706',
+              light: '#f59e0b',
+              dark: '#b45309'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom subtle grid & glass effects */
+    .bg-subtle-grid {
+      background-size: 36px 36px;
+      background-image: 
+        linear-gradient(to right, rgba(120, 120, 120, 0.06) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(120, 120, 120, 0.06) 1px, transparent 1px);
+    }
+    .glass-nav {
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .project-card:hover .project-visual {
+      transform: scale(1.03);
+    }
+    .skill-bar-fill {
+      transition: width 1s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#FAF9F6] dark:bg-[#0F1115] text-stone-900 dark:text-stone-100 font-sans antialiased selection:bg-stone-900 selection:text-white dark:selection:bg-amber-400 dark:selection:text-stone-950 transition-colors duration-300">
+
+  <!-- Toast Notification (Replaces alert) -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 pointer-events-none transition-all duration-300 flex items-center gap-3 bg-stone-900 dark:bg-white text-white dark:text-stone-900 px-5 py-3.5 rounded-2xl shadow-2xl border border-stone-700/40 dark:border-stone-200">
+    <span id="toast-icon" class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 dark:text-emerald-600 flex items-center justify-center text-xs">
+      <i class="fa-solid fa-check"></i>
+    </span>
+    <span id="toast-message" class="text-sm font-medium">Copied to clipboard!</span>
+  </div>
+
+  <!-- Top Navigation -->
+  <header class="sticky top-0 z-40 glass-nav bg-[#FAF9F6]/85 dark:bg-[#0F1115]/85 border-b border-stone-200/80 dark:border-stone-800/80 transition-colors duration-300 no-print">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="#home" class="flex items-center gap-3 group focus:outline-none">
+        <div class="w-10 h-10 rounded-xl bg-stone-900 dark:bg-amber-500 text-white dark:text-stone-950 flex items-center justify-center font-display font-bold text-lg tracking-tight shadow-sm group-hover:scale-105 transition-transform">
+          EA
+        </div>
+        <div>
+          <span class="font-display font-bold text-base sm:text-lg tracking-tight block leading-none">Emon Ahmed Mamun</span>
+          <span class="text-xs text-stone-500 dark:text-stone-400 block mt-1">Graphics &amp; Apparel Designer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-2">
+        <a href="#home" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white hover:bg-stone-200/50 dark:hover:bg-stone-800/60 transition-colors">Home</a>
+        <a href="#about" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white hover:bg-stone-200/50 dark:hover:bg-stone-800/60 transition-colors">About</a>
+        <a href="#skills" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white hover:bg-stone-200/50 dark:hover:bg-stone-800/60 transition-colors">Skills</a>
+        <a href="#projects" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white hover:bg-stone-200/50 dark:hover:bg-stone-800/60 transition-colors">Projects</a>
+        <a href="#experience" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white hover:bg-stone-200/50 dark:hover:bg-stone-800/60 transition-colors">Experience</a>
+        <a href="#blogs" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white hover:bg-stone-200/50 dark:hover:bg-stone-800/60 transition-colors">Websites</a>
+        <a href="#contact" class="nav-link px-3.5 py-2 rounded-xl text-sm font-medium text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white hover:bg-stone-200/50 dark:hover:bg-stone-800/60 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2.5">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" aria-label="Toggle dark mode" class="w-10 h-10 rounded-xl border border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 hover:border-stone-300 dark:hover:border-stone-700 flex items-center justify-center transition-all">
+          <i id="theme-icon" class="fa-solid fa-moon text-sm"></i>
+        </button>
+
+        <!-- Resume Modal Trigger -->
+        <button onclick="openResumeModal()" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-stone-900 dark:bg-white text-white dark:text-stone-900 hover:bg-stone-800 dark:hover:bg-stone-200 transition-all shadow-sm">
+          <i class="fa-regular fa-file-lines"></i>
+          <span>CV / Bio</span>
+        </button>
+
+        <!-- Mobile Hamburger -->
+        <button id="mobile-menu-btn" aria-label="Open Menu" class="md:hidden w-10 h-10 rounded-xl border border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 flex items-center justify-center">
+          <i id="mobile-menu-icon" class="fa-solid fa-bars text-base"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-stone-200 dark:border-stone-800 bg-[#FAF9F6] dark:bg-[#0F1115] px-4 pt-3 pb-6 space-y-2">
+      <a href="#home" class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-stone-800 dark:text-stone-200 hover:bg-stone-200/60 dark:hover:bg-stone-800">Home</a>
+      <a href="#about" class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-stone-800 dark:text-stone-200 hover:bg-stone-200/60 dark:hover:bg-stone-800">About Me</a>
+      <a href="#skills" class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-stone-800 dark:text-stone-200 hover:bg-stone-200/60 dark:hover:bg-stone-800">Skills &amp; Tools</a>
+      <a href="#projects" class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-stone-800 dark:text-stone-200 hover:bg-stone-200/60 dark:hover:bg-stone-800">Featured Projects</a>
+      <a href="#experience" class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-stone-800 dark:text-stone-200 hover:bg-stone-200/60 dark:hover:bg-stone-800">Experience</a>
+      <a href="#blogs" class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-stone-800 dark:text-stone-200 hover:bg-stone-200/60 dark:hover:bg-stone-800">Official Blogs</a>
+      <a href="#contact" class="mobile-nav-link block px-4 py-3 rounded-xl text-sm font-medium text-stone-800 dark:text-stone-200 hover:bg-stone-200/60 dark:hover:bg-stone-800">Contact</a>
+      <div class="pt-2 flex gap-2">
+        <button onclick="openResumeModal()" class="w-full py-3 rounded-xl text-sm font-semibold bg-stone-900 dark:bg-white text-white dark:text-stone-900 flex items-center justify-center gap-2">
+          <i class="fa-regular fa-file-lines"></i> View Digital CV
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="bg-subtle-grid">
+
+    <!-- ================= HERO SECTION ================= -->
+    <section id="home" class="relative pt-10 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          <!-- Left Column: Intro & CTAs -->
+          <div class="lg:col-span-7 space-y-6">
+            <!-- Status Pill -->
+            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span class="text-xs font-medium text-stone-600 dark:text-stone-300">Available for Design Projects &amp; Training Consultations</span>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.12] text-stone-900 dark:text-white">
+              Crafting Visual Identity &amp; <span class="font-serif italic font-normal text-amber-700 dark:text-amber-400">Apparel Artwork</span> with Precision.
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-base sm:text-lg text-stone-600 dark:text-stone-400 max-w-2xl leading-relaxed">
+              Hi, I’m <strong class="text-stone-900 dark:text-stone-100 font-semibold">Emon Ahmed Mamun</strong> — a Graphics &amp; Fashion Apparel Designer, Textile Engineer, and <strong class="text-stone-900 dark:text-stone-100 font-medium">Lead Trainer of Graphic Design &amp; Computer Operation</strong> based in Dhaka Division, Bangladesh.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap items-center gap-3.5 pt-2">
+              <a href="#projects" class="px-6 py-3.5 rounded-2xl bg-stone-900 dark:bg-amber-500 text-white dark:text-stone-950 font-semibold text-sm hover:bg-stone-800 dark:hover:bg-amber-400 transition-all shadow-md flex items-center gap-2.5">
+                <span>Explore Portfolio</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+              <a href="#contact" class="px-6 py-3.5 rounded-2xl bg-white dark:bg-stone-900 text-stone-800 dark:text-stone-200 font-semibold text-sm border border-stone-200 dark:border-stone-800 hover:border-stone-400 dark:hover:border-stone-600 transition-all flex items-center gap-2">
+                <i class="fa-regular fa-envelope text-stone-500"></i>
+                <span>Get In Touch</span>
+              </a>
+            </div>
+
+            <!-- Reference Blogs / Quick Portals -->
+            <div class="pt-4 border-t border-stone-200/80 dark:border-stone-800/80 flex flex-wrap items-center gap-4 text-xs text-stone-500 dark:text-stone-400">
+              <span class="font-semibold uppercase tracking-wider text-stone-400 dark:text-stone-500">Official Blogs:</span>
+              <a href="https://graphicsdesigneremon.blogspot.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-900 hover:bg-stone-200 dark:hover:bg-stone-800 text-stone-700 dark:text-stone-300 font-medium transition-colors">
+                <i class="fa-solid fa-palette text-amber-600 dark:text-amber-400"></i>
+                <span>graphicsdesigneremon.blogspot.com</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-60"></i>
+              </a>
+              <a href="https://emonahmedmamun.blogspot.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-900 hover:bg-stone-200 dark:hover:bg-stone-800 text-stone-700 dark:text-stone-300 font-medium transition-colors">
+                <i class="fa-solid fa-globe text-emerald-600 dark:text-emerald-400"></i>
+                <span>emonahmedmamun.blogspot.com</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] opacity-60"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Designer Studio Profile Card -->
+          <div class="lg:col-span-5">
+            <div class="relative rounded-3xl bg-white dark:bg-stone-900 border border-stone-200/90 dark:border-stone-800 p-6 sm:p-7 shadow-xl">
+              <!-- Top Studio Bar -->
+              <div class="flex items-center justify-between pb-5 mb-5 border-b border-stone-100 dark:border-stone-800">
+                <div class="flex items-center gap-2">
+                  <span class="w-3 h-3 rounded-full bg-rose-400"></span>
+                  <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+                  <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+                </div>
+                <span class="text-[11px] font-mono uppercase tracking-widest text-stone-400">STUDIO PROFILE • BD</span>
+              </div>
+
+              <!-- Visual Identity Artwork Preview -->
+              <div class="relative rounded-2xl overflow-hidden bg-gradient-to-br from-stone-900 via-stone-800 to-stone-950 text-white p-6 mb-6">
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <span class="inline-block px-2.5 py-1 rounded-md bg-amber-500/20 text-amber-300 text-[11px] font-semibold tracking-wide uppercase mb-3">
+                      Design &amp; Fashion is My Passion
+                    </span>
+                    <h2 class="font-display font-bold text-2xl text-white">Emon Ahmed Mamun</h2>
+                    <p class="text-xs text-stone-300 mt-1">Textile Engineer • Graphic Designer • Lead Trainer</p>
+                  </div>
+                  <!-- Custom Monogram Badge SVG -->
+                  <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur flex items-center justify-center border border-white/15 shrink-0">
+                    <svg class="w-8 h-8 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Mini Interactive Specialty Pills -->
+                <div class="mt-6 flex flex-wrap gap-2">
+                  <span class="px-2.5 py-1 rounded-lg bg-white/10 text-[11px] text-stone-200 flex items-center gap-1.5">
+                    <i class="fa-solid fa-shirt text-amber-400"></i> Apparel &amp; Print Artwork
+                  </span>
+                  <span class="px-2.5 py-1 rounded-lg bg-white/10 text-[11px] text-stone-200 flex items-center gap-1.5">
+                    <i class="fa-solid fa-pen-nib text-emerald-400"></i> Corporate Branding
+                  </span>
+                  <span class="px-2.5 py-1 rounded-lg bg-white/10 text-[11px] text-stone-200 flex items-center gap-1.5">
+                    <i class="fa-solid fa-chalkboard-user text-sky-400"></i> CBT&amp;A Lead Trainer
+                  </span>
+                </div>
+              </div>
+
+              <!-- Key Metrics Grid -->
+              <div class="grid grid-cols-3 gap-3 text-center">
+                <div class="p-3.5 rounded-2xl bg-stone-50 dark:bg-stone-800/50 border border-stone-100 dark:border-stone-800">
+                  <span class="block font-display font-bold text-xl sm:text-2xl text-stone-900 dark:text-white">100+</span>
+                  <span class="text-[11px] text-stone-500 dark:text-stone-400">Apparel &amp; Print Designs</span>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-stone-50 dark:bg-stone-800/50 border border-stone-100 dark:border-stone-800">
+                  <span class="block font-display font-bold text-xl sm:text-2xl text-stone-900 dark:text-white">500+</span>
+                  <span class="text-[11px] text-stone-500 dark:text-stone-400">Students Trained</span>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-stone-50 dark:bg-stone-800/50 border border-stone-100 dark:border-stone-800">
+                  <span class="block font-display font-bold text-xl sm:text-2xl text-stone-900 dark:text-white">Global</span>
+                  <span class="text-[11px] text-stone-500 dark:text-stone-400">Buyer Artworks</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ME SECTION ================= -->
+    <section id="about" class="py-20 bg-white dark:bg-[#14171C] border-y border-stone-200/70 dark:border-stone-800/80 transition-colors">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="max-w-2xl mb-14">
+          <span class="text-xs font-mono uppercase tracking-widest text-amber-700 dark:text-amber-400 font-semibold block mb-2">01 / About Me</span>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-tight text-stone-900 dark:text-white">
+            Where Textile Engineering Meets Visual Storytelling.
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+          <!-- Narrative Bio -->
+          <div class="lg:col-span-7 space-y-5 text-stone-600 dark:text-stone-300 leading-relaxed text-base">
+            <p>
+              I am <strong class="text-stone-900 dark:text-white font-semibold">Emon Ahmed Mamun</strong>, a multidisciplinary Graphics &amp; Apparel Designer with an academic and technical foundation in <strong class="text-stone-900 dark:text-white font-medium">Textile Engineering</strong>. My work bridges creative garment graphics—such as T-shirt color screen prints, export babywear artwork, and sportswear jerseys—with high-impact corporate branding and promotional campaigns.
+            </p>
+            <p>
+              Alongside my commercial design practice for prominent brands and hospitality groups (including <strong class="text-stone-900 dark:text-white font-medium">Fortis Group / Fortis Downtown Resort</strong>, <strong class="text-stone-900 dark:text-white font-medium">TORR</strong> ramp shows, and international apparel buyers in Thailand), I serve as the <strong class="text-stone-900 dark:text-white font-medium">Lead Trainer of Computer Operation &amp; Graphics &amp; Design</strong> and Training Coordinator at <strong class="text-stone-900 dark:text-white font-medium">Asia Skills Institution</strong> in Rupganj, Narayanganj.
+            </p>
+            <p>
+              Whether I am preparing color-separated production files for screen printing, designing corporate stationery, or mentoring students in competency-based graphic design programs, my motto remains simple: <em>“Design &amp; Fashion is My Passion.”</em>
+            </p>
+
+            <!-- Quick Highlights Strip -->
+            <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="p-4 rounded-2xl bg-[#FAF9F6] dark:bg-stone-900 border border-stone-200/70 dark:border-stone-800 flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div>
+                  <h3 class="font-display font-semibold text-sm text-stone-900 dark:text-white">Production-Ready Apparel</h3>
+                  <p class="text-xs text-stone-500 dark:text-stone-400 mt-1">Color print separation, jersey patterns, and export buyer garment graphics.</p>
+                </div>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-[#FAF9F6] dark:bg-stone-900 border border-stone-200/70 dark:border-stone-800 flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                  <h3 class="font-display font-semibold text-sm text-stone-900 dark:text-white">Design Mentorship &amp; RPL</h3>
+                  <p class="text-xs text-stone-500 dark:text-stone-400 mt-1">Lead Trainer &amp; Assessment Coordinator empowering skilled professionals.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Facts Card -->
+          <div class="lg:col-span-5 bg-[#FAF9F6] dark:bg-stone-900 rounded-3xl p-6 sm:p-8 border border-stone-200/80 dark:border-stone-800 space-y-5">
+            <h3 class="font-display font-bold text-lg text-stone-900 dark:text-white border-b border-stone-200 dark:border-stone-800 pb-3">
+              Professional Snapshot
+            </h3>
+
+            <dl class="space-y-4 text-sm">
+              <div class="flex justify-between items-start gap-4">
+                <dt class="text-stone-500 dark:text-stone-400">Full Name</dt>
+                <dd class="font-medium text-stone-900 dark:text-white text-right">Emon Ahmed Mamun</dd>
+              </div>
+              <div class="flex justify-between items-start gap-4">
+                <dt class="text-stone-500 dark:text-stone-400">Current Role</dt>
+                <dd class="font-medium text-stone-900 dark:text-white text-right">Lead Trainer (Graphics &amp; ICT) &amp; Designer</dd>
+              </div>
+              <div class="flex justify-between items-start gap-4">
+                <dt class="text-stone-500 dark:text-stone-400">Institution</dt>
+                <dd class="font-medium text-stone-900 dark:text-white text-right">Asia Skills Institution</dd>
+              </div>
+              <div class="flex justify-between items-start gap-4">
+                <dt class="text-stone-500 dark:text-stone-400">Core Background</dt>
+                <dd class="font-medium text-stone-900 dark:text-white text-right">Textile Engineering &amp; Graphic Design</dd>
+              </div>
+              <div class="flex justify-between items-start gap-4">
+                <dt class="text-stone-500 dark:text-stone-400">Location</dt>
+                <dd class="font-medium text-stone-900 dark:text-white text-right">Rupganj, Narayanganj, Dhaka</dd>
+              </div>
+              <div class="flex justify-between items-start gap-4">
+                <dt class="text-stone-500 dark:text-stone-400">Email</dt>
+                <dd class="font-medium text-amber-700 dark:text-amber-400 text-right break-all">textileengineeremon@gmail.com</dd>
+              </div>
+            </dl>
+
+            <div class="pt-2">
+              <a href="#contact" class="w-full py-3 rounded-xl bg-stone-900 dark:bg-white text-white dark:text-stone-900 text-xs font-semibold uppercase tracking-wider flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+                <span>Request Collaboration</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= SKILLS & EXPERTISE SECTION ================= -->
+    <section id="skills" class="py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+          <div>
+            <span class="text-xs font-mono uppercase tracking-widest text-amber-700 dark:text-amber-400 font-semibold block mb-2">02 / Capabilities &amp; Tools</span>
+            <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-tight text-stone-900 dark:text-white">
+              Core Skills &amp; Technical Stack
+            </h2>
+          </div>
+          <p class="text-sm text-stone-600 dark:text-stone-400 max-w-md">
+            Combining industry-standard graphic design software with garment manufacturing expertise and competency-based training leadership.
+          </p>
+        </div>
+
+        <!-- 3-Column Bento Skills Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Pillar 1: Apparel & Fashion Graphics -->
+          <div class="rounded-3xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 p-7 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center text-xl mb-5">
+                <i class="fa-solid fa-shirt"></i>
+              </div>
+              <h3 class="font-display font-bold text-xl text-stone-900 dark:text-white mb-2">Apparel &amp; Textile Design</h3>
+              <p class="text-xs text-stone-500 dark:text-stone-400 mb-6 leading-relaxed">
+                Specialized garment graphics for international export buyers, screen printing, and activewear lines.
+              </p>
+
+              <div class="space-y-4">
+                <div>
+                  <div class="flex justify-between text-xs font-medium mb-1.5">
+                    <span>T-Shirt Color Print &amp; Placement</span>
+                    <span class="text-amber-600 dark:text-amber-400">98%</span>
+                  </div>
+                  <div class="h-2 w-full rounded-full bg-stone-100 dark:bg-stone-800 overflow-hidden">
+                    <div class="h-full bg-stone-900 dark:bg-amber-400 rounded-full" style="width: 98%"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-medium mb-1.5">
+                    <span>Kids &amp; Baby Dress Export Artwork</span>
+                    <span class="text-amber-600 dark:text-amber-400">95%</span>
+                  </div>
+                  <div class="h-2 w-full rounded-full bg-stone-100 dark:bg-stone-800 overflow-hidden">
+                    <div class="h-full bg-stone-900 dark:bg-amber-400 rounded-full" style="width: 95%"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-medium mb-1.5">
+                    <span>Sportswear &amp; Sublimation Jersey</span>
+                    <span class="text-amber-600 dark:text-amber-400">94%</span>
+                  </div>
+                  <div class="h-2 w-full rounded-full bg-stone-100 dark:bg-stone-800 overflow-hidden">
+                    <div class="h-full bg-stone-900 dark:bg-amber-400 rounded-full" style="width: 94%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-stone-100 dark:border-stone-800 flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg bg-stone-100 dark:bg-stone-800 text-[11px] font-medium">Color Separation</span>
+              <span class="px-2.5 py-1 rounded-lg bg-stone-100 dark:bg-stone-800 text-[11px] font-medium">Tech Packs</span>
+              <span class="px-2.5 py-1 rounded-lg bg-stone-100 dark:bg-stone-800 text-[11px] font-medium">Pantone Matching</span>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Brand Identity & Print Media -->
+          <div class="rounded-3xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 p-7 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl mb-5">
+                <i class="fa-solid fa-pen-ruler"></i>
+              </div>
+              <h3 class="font-display font-bold text-xl text-stone-900 dark:text-white mb-2">Graphics &amp; Brand Visuals</h3>
+              <p class="text-xs text-stone-500 dark:text-stone-400 mb-6 leading-relaxed">
+                Complete visual communication systems, resort promotional campaigns, and event collateral.
+              </p>
+
+              <div class="space-y-4">
+                <div>
+                  <div class="flex justify-between text-xs font-medium mb-1.5">
+                    <span>Adobe Illustrator &amp; Vector Craft</span>
+                    <span class="text-emerald-600 dark:text-emerald-400">97%</span>
+                  </div>
+                  <div class="h-2 w-full rounded-full bg-stone-100 dark:bg-stone-800 overflow-hidden">
+                    <div class="h-full bg-stone-900 dark:bg-emerald-400 rounded-full" style="width: 97%"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-medium mb-1.5">
+                    <span>Adobe Photoshop &amp; Retouching</span>
+                    <span class="text-emerald-600 dark:text-emerald-400">95%</span>
+                  </div>
+                  <div class="h-2 w-full rounded-full bg-stone-100 dark:bg-stone-800 overflow-hidden">
+                    <div class="h-full bg-stone-900 dark:bg-emerald-400 rounded-full" style="width: 95%"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-medium mb-1.5">
+                    <span>Corporate Print &amp; Event Branding</span>
+                    <span class="text-emerald-600 dark:text-emerald-400">92%</span>
+                  </div>
+                  <div class="h-2 w-full rounded-full bg-stone-100 dark:bg-stone-800 overflow-hidden">
+                    <div class="h-full bg-stone-900 dark:bg-emerald-400 rounded-full" style="width: 92%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-stone-100 dark:border-stone-800 flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg bg-stone-100 dark:bg-stone-800 text-[11px] font-medium">Illustrator CC</span>
+              <span class="px-2.5 py-1 rounded-lg bg-stone-100 dark:bg-stone-800 text-[11px] font-medium">Photoshop CC</span>
+              <span class="px-2.5 py-1 rounded-lg bg-stone-100 dark:bg-stone-800 text-[11px] font-medium">TVC Promos</span>
+            </div>
+          </div>
+
+          <!-- Pillar 3: ICT Training & Administration -->
+          <div class="rounded-3xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 p-7 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center text-xl mb-5">
+                <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+              <h3 class="font-display font-bold text-xl text-stone-900 dark:text-white mb-2">ICT Training &amp; Management</h3>
+              <p class="text-xs text-stone-500 dark:text-stone-400 mb-6 leading-relaxed">
+                Curriculum delivery, RPL assessment coordination, and corporate administration.
+              </p>
+
+              <div class="space-y-4">
+                <div>
+                  <div class="flex justify-between text-xs font-medium mb-1.5">
+                    <span>Graphic Design for Freelancing</span>
+                    <span class="text-sky-600 dark:text-sky-400">96%</span>
+                  </div>
+                  <div class="h-2 w-full rounded-full bg-stone-100 dark:bg-stone-800 overflow-hidden">
+                    <div class="h-full bg-stone-900 dark:bg-sky-400 rounded-full" style="width: 96%"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-medium mb-1.5">
+                    <span>Computer Operation &amp; Office Suite</span>
+                    <span class="text-sky-600 dark:text-sky-400">98%</span>
+                  </div>
+                  <div class="h-2 w-full rounded-full bg-stone-100 dark:bg-stone-800 overflow-hidden">
+                    <div class="h-full bg-stone-900 dark:bg-sky-400 rounded-full" style="width: 98%"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-medium mb-1.5">
+                    <span>CBT&amp;A / RPL Program Coordination</span>
+                    <span class="text-sky-600 dark:text-sky-400">95%</span>
+                  </div>
+                  <div class="h-2 w-full rounded-full bg-stone-100 dark:bg-stone-800 overflow-hidden">
+                    <div class="h-full bg-stone-900 dark:bg-sky-400 rounded-full" style="width: 95%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-stone-100 dark:border-stone-800 flex flex-wrap gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg bg-stone-100 dark:bg-stone-800 text-[11px] font-medium">NSDA / ASSET</span>
+              <span class="px-2.5 py-1 rounded-lg bg-stone-100 dark:bg-stone-800 text-[11px] font-medium">Admin &amp; Accounts</span>
+              <span class="px-2.5 py-1 rounded-lg bg-stone-100 dark:bg-stone-800 text-[11px] font-medium">Mentorship</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED PROJECTS SECTION ================= -->
+    <section id="projects" class="py-20 bg-white dark:bg-[#14171C] border-y border-stone-200/70 dark:border-stone-800/80 transition-colors">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header + Filter Buttons -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+          <div>
+            <span class="text-xs font-mono uppercase tracking-widest text-amber-700 dark:text-amber-400 font-semibold block mb-2">03 / Selected Works</span>
+            <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-tight text-stone-900 dark:text-white">
+              Featured Design Portfolio
+            </h2>
+          </div>
+
+          <!-- Category Filter Tabs -->
+          <div class="flex flex-wrap gap-2" id="project-filters">
+            <button onclick="filterProjects('all')" data-filter="all" class="filter-btn active px-4 py-2 rounded-xl text-xs font-semibold bg-stone-900 text-white dark:bg-amber-500 dark:text-stone-950 transition-all">
+              All Works
+            </button>
+            <button onclick="filterProjects('apparel')" data-filter="apparel" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-700 transition-all">
+              Apparel &amp; Textile
+            </button>
+            <button onclick="filterProjects('branding')" data-filter="branding" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-700 transition-all">
+              Corporate &amp; Print
+            </button>
+            <button onclick="filterProjects('campaign')" data-filter="campaign" class="filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-700 transition-all">
+              Event &amp; TVC Campaigns
+            </button>
+          </div>
+        </div>
+
+        <!-- Projects Grid (Populated via JS from authentic blog entries) -->
+        <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+          <!-- Cards injected dynamically -->
+        </div>
+
+        <!-- Bottom Blog Banner -->
+        <div class="mt-12 p-6 sm:p-8 rounded-3xl bg-[#FAF9F6] dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <h3 class="font-display font-bold text-lg text-stone-900 dark:text-white">Want to browse the full archive of posts &amp; artworks?</h3>
+            <p class="text-xs sm:text-sm text-stone-500 dark:text-stone-400 mt-1">Visit Emon Ahmed Mamun’s official design blogs for continuous updates and garment design showcases.</p>
+          </div>
+          <div class="flex flex-wrap gap-3 shrink-0">
+            <a href="https://graphicsdesigneremon.blogspot.com" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-stone-900 dark:bg-white text-white dark:text-stone-900 text-xs font-semibold flex items-center gap-2 hover:opacity-90 transition-opacity">
+              <span>Graphics Blog</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+            <a href="https://emonahmedmamun.blogspot.com" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl border border-stone-300 dark:border-stone-700 text-stone-800 dark:text-stone-200 text-xs font-semibold flex items-center gap-2 hover:bg-stone-200/50 dark:hover:bg-stone-800 transition-colors">
+              <span>Personal Blog</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE & EDUCATION SECTION ================= -->
+    <section id="experience" class="py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-2xl mb-14">
+          <span class="text-xs font-mono uppercase tracking-widest text-amber-700 dark:text-amber-400 font-semibold block mb-2">04 / Career Journey</span>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-tight text-stone-900 dark:text-white">
+            Professional Experience &amp; Leadership
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          
+          <!-- Left: Roles Timeline -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <!-- Role 1 -->
+            <div class="p-6 sm:p-7 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 shadow-sm relative">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-700 dark:text-emerald-400">
+                  Current Position
+                </span>
+                <span class="text-xs font-mono text-stone-400">Rupganj, Narayanganj</span>
+              </div>
+              <h3 class="font-display font-bold text-xl text-stone-900 dark:text-white">
+                Lead Trainer (Computer Operation &amp; Graphics &amp; Design)
+              </h3>
+              <p class="text-sm font-medium text-amber-700 dark:text-amber-400 mt-0.5">
+                Asia Skills Institution
+              </p>
+              <p class="text-sm text-stone-600 dark:text-stone-400 mt-3 leading-relaxed">
+                Leading practical studio instruction in Graphic Design for Freelancing and Computer Application packages. Serving as Training &amp; Assessment Coordinator for Recognition of Prior Learning (RPL) and ASSET competency batches.
+              </p>
+            </div>
+
+            <!-- Role 2 -->
+            <div class="p-6 sm:p-7 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 shadow-sm relative">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-amber-500/10 text-amber-700 dark:text-amber-400">
+                  Creative Practice
+                </span>
+                <span class="text-xs font-mono text-stone-400">Dhaka, Bangladesh</span>
+              </div>
+              <h3 class="font-display font-bold text-xl text-stone-900 dark:text-white">
+                Graphics &amp; Apparel Artwork Designer
+              </h3>
+              <p class="text-sm font-medium text-amber-700 dark:text-amber-400 mt-0.5">
+                Fashion, Export Garments &amp; Hospitality Brands
+              </p>
+              <p class="text-sm text-stone-600 dark:text-stone-400 mt-3 leading-relaxed">
+                Designed custom T-shirt color screen prints, international buyer babywear collections (Thailand export market), unisex sportswear jerseys, and brand collateral for Fortis Downtown Resort, Fortis Group, and TORR Ramp Show programs.
+              </p>
+            </div>
+
+            <!-- Role 3 -->
+            <div class="p-6 sm:p-7 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 shadow-sm relative">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-stone-200 dark:bg-stone-800 text-stone-700 dark:text-stone-300">
+                  Corporate Operations
+                </span>
+                <span class="text-xs font-mono text-stone-400">Dhaka, Bangladesh</span>
+              </div>
+              <h3 class="font-display font-bold text-xl text-stone-900 dark:text-white">
+                Manager — Admin, Coordination &amp; Accounts
+              </h3>
+              <p class="text-sm font-medium text-amber-700 dark:text-amber-400 mt-0.5">
+                SB Elevator Group &amp; Institutional Management
+              </p>
+              <p class="text-sm text-stone-600 dark:text-stone-400 mt-3 leading-relaxed">
+                Managed corporate administration, financial accounts, RPL-ASSET assessment batch coordination, and client operations with structured precision.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Right: Philosophy & Specializations -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="p-7 rounded-3xl bg-stone-900 dark:bg-stone-900 text-white border border-stone-800 shadow-lg">
+              <i class="fa-solid fa-quote-left text-2xl text-amber-400 mb-4 block"></i>
+              <p class="font-serif italic text-2xl sm:text-3xl leading-snug text-stone-100">
+                “Every garment print and brand identity should not only look striking on screen, but translate flawlessly into physical production.”
+              </p>
+              <div class="mt-6 pt-5 border-t border-stone-800 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-amber-500 text-stone-950 font-display font-bold flex items-center justify-center">
+                  EA
+                </div>
+                <div>
+                  <span class="text-sm font-semibold block">Emon Ahmed Mamun</span>
+                  <span class="text-xs text-stone-400">Textile Engineer &amp; Graphic Designer</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Key Focus Areas Card -->
+            <div class="p-7 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 space-y-4">
+              <h3 class="font-display font-bold text-lg text-stone-900 dark:text-white">
+                Why Clients &amp; Institutions Work With Me
+              </h3>
+              <ul class="space-y-3 text-sm text-stone-600 dark:text-stone-300">
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i>
+                  <span><strong>Technical Textile Knowledge:</strong> Deep understanding of fabric behavior, sublimation, and screen print color separation.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i>
+                  <span><strong>Versatile Brand Execution:</strong> From resort TVCs and ramp show stage visuals to corporate booking forms.</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i>
+                  <span><strong>Structured Mentorship:</strong> Certified CBT&amp;A training approach that empowers new designers and freelancers.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OFFICIAL WEBSITES & BLOGS SECTION ================= -->
+    <section id="blogs" class="py-20 bg-[#FAF9F6] dark:bg-[#0F1115] border-t border-stone-200/70 dark:border-stone-800/80 transition-colors">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-2xl mb-12">
+          <span class="text-xs font-mono uppercase tracking-widest text-amber-700 dark:text-amber-400 font-semibold block mb-2">05 / Web Presence</span>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-tight text-stone-900 dark:text-white">
+            Official Blogs &amp; Design Archives
+          </h2>
+          <p class="text-sm sm:text-base text-stone-600 dark:text-stone-400 mt-2">
+            Explore my live web publications, complete artwork posts, and personal updates across my two official Blogger portals.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+          <!-- Portal 1: Graphics Designer Emon -->
+          <div class="p-7 sm:p-8 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200/90 dark:border-stone-800 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-4 mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center text-xl">
+                  <i class="fa-solid fa-palette"></i>
+                </div>
+                <span class="px-3 py-1 rounded-full text-[11px] font-mono uppercase tracking-wider bg-amber-500/10 text-amber-700 dark:text-amber-400 font-semibold">
+                  Design Portfolio Blog
+                </span>
+              </div>
+              <h3 class="font-display font-bold text-2xl text-stone-900 dark:text-white">
+                Graphics Designer Emon
+              </h3>
+              <p class="text-xs font-mono text-stone-400 mt-1">
+                graphicsdesigneremon.blogspot.com
+              </p>
+              <p class="text-sm text-stone-600 dark:text-stone-400 mt-4 leading-relaxed">
+                Dedicated showcase featuring T-shirt color screen prints, Thailand buyer baby dress artwork, Fortis Downtown Resort Ramadan TVC visuals, TORR Ramp Show programs, and unisex jersey designs.
+              </p>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-stone-100 dark:border-stone-800 flex flex-wrap items-center justify-between gap-3">
+              <a href="https://graphicsdesigneremon.blogspot.com" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-stone-900 dark:bg-amber-500 text-white dark:text-stone-950 text-xs font-semibold inline-flex items-center gap-2 hover:opacity-90 transition-opacity">
+                <span>Visit Design Blog</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+              </a>
+              <button onclick="copyText('https://graphicsdesigneremon.blogspot.com', 'Blog URL copied!')" class="px-3.5 py-2 rounded-xl border border-stone-200 dark:border-stone-700 text-xs font-medium text-stone-600 dark:text-stone-300 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+                <i class="fa-regular fa-copy mr-1"></i> Copy Link
+              </button>
+            </div>
+          </div>
+
+          <!-- Portal 2: Emon Ahmed Mamun Personal Blog -->
+          <div class="p-7 sm:p-8 rounded-3xl bg-white dark:bg-stone-900 border border-stone-200/90 dark:border-stone-800 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-4 mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl">
+                  <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <span class="px-3 py-1 rounded-full text-[11px] font-mono uppercase tracking-wider bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 font-semibold">
+                  Personal &amp; Career Portal
+                </span>
+              </div>
+              <h3 class="font-display font-bold text-2xl text-stone-900 dark:text-white">
+                Emon Ahmed Mamun
+              </h3>
+              <p class="text-xs font-mono text-stone-400 mt-1">
+                emonahmedmamun.blogspot.com
+              </p>
+              <p class="text-sm text-stone-600 dark:text-stone-400 mt-4 leading-relaxed">
+                Official personal blog covering textile engineering insights, ICT &amp; graphic design training updates, RPL competency assessments, and professional milestones.
+              </p>
+            </div>
+
+            <div class="pt-6 mt-6 border-t border-stone-100 dark:border-stone-800 flex flex-wrap items-center justify-between gap-3">
+              <a href="https://emonahmedmamun.blogspot.com" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl bg-stone-900 dark:bg-white text-white dark:text-stone-900 text-xs font-semibold inline-flex items-center gap-2 hover:opacity-90 transition-opacity">
+                <span>Visit Personal Blog</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+              </a>
+              <button onclick="copyText('https://emonahmedmamun.blogspot.com', 'Personal blog URL copied!')" class="px-3.5 py-2 rounded-xl border border-stone-200 dark:border-stone-700 text-xs font-medium text-stone-600 dark:text-stone-300 hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors">
+                <i class="fa-regular fa-copy mr-1"></i> Copy Link
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact" class="py-20 bg-white dark:bg-[#14171C] border-t border-stone-200/70 dark:border-stone-800/80 transition-colors">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Contact Details Column -->
+          <div class="lg:col-span-5 space-y-6">
+            <div>
+              <span class="text-xs font-mono uppercase tracking-widest text-amber-700 dark:text-amber-400 font-semibold block mb-2">06 / Contact</span>
+              <h2 class="font-display font-bold text-3xl sm:text-4xl tracking-tight text-stone-900 dark:text-white">
+                Let’s Discuss Your Next Design Project.
+              </h2>
+              <p class="text-sm sm:text-base text-stone-600 dark:text-stone-400 mt-3 leading-relaxed">
+                Reach out for custom apparel graphics, brand identity design, corporate print collateral, or graphic design training inquiries.
+              </p>
+            </div>
+
+            <!-- Interactive Copyable Contact Cards -->
+            <div class="space-y-3.5">
+              <!-- Email Card -->
+              <div class="p-4 rounded-2xl bg-[#FAF9F6] dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 flex items-center justify-between gap-3">
+                <div class="flex items-center gap-3.5 min-w-0">
+                  <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
+                    <i class="fa-regular fa-envelope"></i>
+                  </div>
+                  <div class="min-w-0">
+                    <span class="text-[11px] uppercase tracking-wider text-stone-400 block">Email Address</span>
+                    <a href="mailto:textileengineeremon@gmail.com" class="text-sm font-semibold text-stone-900 dark:text-white truncate block hover:underline">
+                      textileengineeremon@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <button onclick="copyText('textileengineeremon@gmail.com', 'Email address copied!')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 hover:bg-stone-100 dark:hover:bg-stone-700 transition-colors shrink-0">
+                  <i class="fa-regular fa-copy mr-1"></i> Copy
+                </button>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="p-4 rounded-2xl bg-[#FAF9F6] dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 flex items-center justify-between gap-3">
+                <div class="flex items-center gap-3.5">
+                  <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div>
+                    <span class="text-[11px] uppercase tracking-wider text-stone-400 block">Phone / WhatsApp</span>
+                    <a href="tel:+8801836269650" class="text-sm font-semibold text-stone-900 dark:text-white hover:underline">
+                      +880 1836-269650
+                    </a>
+                  </div>
+                </div>
+                <button onclick="copyText('+8801836269650', 'Phone number copied!')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 hover:bg-stone-100 dark:hover:bg-stone-700 transition-colors shrink-0">
+                  <i class="fa-regular fa-copy mr-1"></i> Copy
+                </button>
+              </div>
+
+              <!-- Location Card -->
+              <div class="p-4 rounded-2xl bg-[#FAF9F6] dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800 flex items-center gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <span class="text-[11px] uppercase tracking-wider text-stone-400 block">Studio &amp; Training Location</span>
+                  <span class="text-sm font-semibold text-stone-900 dark:text-white">
+                    Harinda, Rupganj, Narayanganj, Dhaka, Bangladesh
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Inquiry Form Column -->
+          <div class="lg:col-span-7">
+            <div class="p-6 sm:p-8 rounded-3xl bg-[#FAF9F6] dark:bg-stone-900 border border-stone-200/80 dark:border-stone-800">
+              <h3 class="font-display font-bold text-xl text-stone-900 dark:text-white mb-6">Send a Direct Message</h3>
+              
+              <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label for="name" class="block text-xs font-semibold uppercase tracking-wider text-stone-500 dark:text-stone-400 mb-2">Your Name *</label>
+                    <input type="text" id="name" required placeholder="e.g., Tanvir Rahman" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-stone-950 border border-stone-200 dark:border-stone-800 text-sm focus:outline-none focus:border-stone-900 dark:focus:border-amber-400 transition-colors" />
+                  </div>
+                  <div>
+                    <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-stone-500 dark:text-stone-400 mb-2">Your Email *</label>
+                    <input type="email" id="email" required placeholder="you@company.com" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-stone-950 border border-stone-200 dark:border-stone-800 text-sm focus:outline-none focus:border-stone-900 dark:focus:border-amber-400 transition-colors" />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="subject" class="block text-xs font-semibold uppercase tracking-wider text-stone-500 dark:text-stone-400 mb-2">Inquiry Category</label>
+                  <select id="subject" class="w-full px-4 py-3 rounded-xl bg-white dark:bg-stone-950 border border-stone-200 dark:border-stone-800 text-sm focus:outline-none focus:border-stone-900 dark:focus:border-amber-400 transition-colors">
+                    <option value="Apparel & T-Shirt Print Design">Apparel &amp; T-Shirt Print Design</option>
+                    <option value="Export Buyer Garment Artwork">Export Buyer Garment Artwork</option>
+                    <option value="Corporate Branding & Print Stationery">Corporate Branding &amp; Print Stationery</option>
+                    <option value="Event / TVC Promotional Graphics">Event / TVC Promotional Graphics</option>
+                    <option value="Graphic Design Training & Consultation">Graphic Design Training &amp; Consultation</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="message" class="block text-xs font-semibold uppercase tracking-wider text-stone-500 dark:text-stone-400 mb-2">Project Details *</label>
+                  <textarea id="message" rows="4" required placeholder="Tell me about your garment line, branding requirements, or timeline..." class="w-full px-4 py-3 rounded-xl bg-white dark:bg-stone-950 border border-stone-200 dark:border-stone-800 text-sm focus:outline-none focus:border-stone-900 dark:focus:border-amber-400 transition-colors"></textarea>
+                </div>
+
+                <div class="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <p class="text-xs text-stone-500 dark:text-stone-400">
+                    <i class="fa-solid fa-lock text-emerald-500 mr-1"></i> Direct response within 24 hours.
+                  </p>
+                  <button type="submit" class="px-7 py-3.5 rounded-xl bg-stone-900 dark:bg-amber-500 text-white dark:text-stone-950 font-semibold text-sm hover:bg-stone-800 dark:hover:bg-amber-400 transition-all shadow-sm flex items-center justify-center gap-2">
+                    <span>Send Message</span>
+                    <i class="fa-regular fa-paper-plane"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-[#FAF9F6] dark:bg-[#0F1115] border-t border-stone-200/80 dark:border-stone-800 py-12 no-print">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-stone-900 dark:bg-amber-500 text-white dark:text-stone-950 flex items-center justify-center font-display font-bold text-sm">
+          EA
+        </div>
+        <span class="text-sm font-medium text-stone-700 dark:text-stone-300">
+          © <span id="year"></span> Emon Ahmed Mamun. All rights reserved.
+        </span>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-5 text-xs font-medium text-stone-500 dark:text-stone-400">
+        <a href="https://graphicsdesigneremon.blogspot.com" target="_blank" rel="noopener noreferrer" class="hover:text-stone-900 dark:hover:text-white transition-colors">Graphics Blog</a>
+        <a href="https://emonahmedmamun.blogspot.com" target="_blank" rel="noopener noreferrer" class="hover:text-stone-900 dark:hover:text-white transition-colors">Personal Blog</a>
+        <a href="mailto:textileengineeremon@gmail.com" class="hover:text-stone-900 dark:hover:text-white transition-colors">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= PROJECT DETAIL MODAL ================= -->
+  <div id="project-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-stone-950/70 backdrop-blur-sm">
+    <div class="relative w-full max-w-2xl rounded-3xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 shadow-2xl overflow-hidden max-h-[90vh] flex flex-col">
+      <!-- Modal Top Bar -->
+      <div class="px-6 py-4 border-b border-stone-200 dark:border-stone-800 flex items-center justify-between">
+        <span id="modal-category" class="text-xs font-mono uppercase tracking-wider text-amber-600 dark:text-amber-400 font-semibold">Category</span>
+        <button onclick="closeProjectModal()" aria-label="Close modal" class="w-8 h-8 rounded-full bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 flex items-center justify-center hover:bg-stone-200 dark:hover:bg-stone-700">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Modal Scrollable Content -->
+      <div class="p-6 sm:p-8 overflow-y-auto space-y-6">
+        <div id="modal-visual" class="w-full h-56 rounded-2xl overflow-hidden flex items-center justify-center"></div>
+        <div>
+          <h3 id="modal-title" class="font-display font-bold text-2xl text-stone-900 dark:text-white">Project Title</h3>
+          <p id="modal-client" class="text-xs font-medium text-stone-500 dark:text-stone-400 mt-1"></p>
+        </div>
+        <p id="modal-description" class="text-sm text-stone-600 dark:text-stone-300 leading-relaxed"></p>
+        <div>
+          <h4 class="text-xs font-mono uppercase tracking-wider text-stone-400 mb-2.5">Deliverables &amp; Specifications</h4>
+          <div id="modal-tags" class="flex flex-wrap gap-2"></div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="px-6 py-4 bg-stone-50 dark:bg-stone-950 border-t border-stone-200 dark:border-stone-800 flex items-center justify-between">
+        <a id="modal-link" href="https://graphicsdesigneremon.blogspot.com" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-amber-700 dark:text-amber-400 hover:underline flex items-center gap-1.5">
+          <span>View Post on Official Blog</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+        </a>
+        <button onclick="closeProjectModal()" class="px-4 py-2 rounded-xl bg-stone-900 dark:bg-white text-white dark:text-stone-900 text-xs font-semibold">
+          Close Preview
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= DIGITAL CV / RESUME MODAL ================= -->
+  <div id="resume-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-stone-950/70 backdrop-blur-sm">
+    <div class="relative w-full max-w-3xl rounded-3xl bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 shadow-2xl overflow-hidden max-h-[90vh] flex flex-col">
+      <div class="px-6 py-4 border-b border-stone-200 dark:border-stone-800 flex items-center justify-between no-print">
+        <span class="text-xs font-mono uppercase tracking-wider text-stone-500 font-semibold">Curriculum Vitae Summary</span>
+        <div class="flex items-center gap-2">
+          <button onclick="window.print()" class="px-3.5 py-1.5 rounded-xl bg-stone-900 dark:bg-amber-500 text-white dark:text-stone-950 text-xs font-semibold flex items-center gap-1.5">
+            <i class="fa-solid fa-print"></i> Print / Save PDF
+          </button>
+          <button onclick="closeResumeModal()" class="w-8 h-8 rounded-full bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 flex items-center justify-center">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="p-6 sm:p-8 overflow-y-auto space-y-6 text-sm">
+        <div class="border-b border-stone-200 dark:border-stone-800 pb-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <h2 class="font-display font-bold text-2xl text-stone-900 dark:text-white">Emon Ahmed Mamun</h2>
+            <p class="text-amber-700 dark:text-amber-400 font-medium">Graphics &amp; Apparel Designer | Lead Trainer (Computer Operation &amp; Graphic Design)</p>
+          </div>
+          <div class="text-xs text-stone-500 dark:text-stone-400 space-y-1 sm:text-right">
+            <div><i class="fa-regular fa-envelope mr-1"></i> textileengineeremon@gmail.com</div>
+            <div><i class="fa-solid fa-phone mr-1"></i> +880 1836-269650</div>
+            <div><i class="fa-solid fa-location-dot mr-1"></i> Rupganj, Narayanganj, Bangladesh</div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-mono uppercase tracking-wider text-stone-400 mb-2">Professional Summary</h4>
+          <p class="text-stone-600 dark:text-stone-300 leading-relaxed">
+            Creative Graphics and Textile Apparel Designer with extensive experience in export garment artwork, screen print color separation, corporate visual identity, and promotional campaigns. Currently serving as Lead Trainer of Computer Operation &amp; Graphics &amp; Design and RPL Assessment Coordinator at Asia Skills Institution.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <h4 class="text-xs font-mono uppercase tracking-wider text-stone-400 mb-2">Key Projects</h4>
+            <ul class="list-disc list-inside text-stone-600 dark:text-stone-300 space-y-1.5 text-xs">
+              <li>Color Print Design for T-Shirt Collections</li>
+              <li>Baby Dress Export Artwork for Thailand’s Buyer</li>
+              <li>Ramadan TVC Campaign — Fortis Downtown Resort</li>
+              <li>TORR Ramp Show Programs &amp; Brand Promoter Visuals</li>
+              <li>Men’s &amp; Women’s Sublimation Jersey Design</li>
+              <li>Corporate Booking Form &amp; Stationery — Fortis Group</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-xs font-mono uppercase tracking-wider text-stone-400 mb-2">Core Competencies</h4>
+            <ul class="list-disc list-inside text-stone-600 dark:text-stone-300 space-y-1.5 text-xs">
+              <li>Adobe Illustrator, Photoshop &amp; Print Prep</li>
+              <li>Garment Tech Packs &amp; Textile Screen Printing</li>
+              <li>Corporate Branding &amp; Marketing Collateral</li>
+              <li>CBT&amp;A / NSDA Competency-Based Instruction</li>
+              <li>Computer Operation &amp; Office Administration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= JAVASCRIPT LOGIC ================= -->
+  <script>
+    // Authentic Projects Data sourced from graphicsdesigneremon.blogspot.com
+    const projectsData = [
+      {
+        id: 1,
+        title: "Color Print Design for T-Shirt",
+        category: "apparel",
+        categoryLabel: "Apparel & Screen Print",
+        client: "Fashion & Streetwear Apparel Line",
+        date: "September 2024",
+        summary: "High-contrast multi-color screen print graphic engineered for cotton and blended knit T-shirts with crisp vector halftones and spot-color separation.",
+        tags: ["Color Separation", "Screen Print", "Vector Artwork", "T-Shirt Graphics"],
+        gradient: "from-amber-500/20 via-orange-500/10 to-stone-900",
+        accentColor: "#f59e0b",
+        icon: "fa-shirt",
+        svgType: "tshirt"
+      },
+      {
+        id: 2,
+        title: "Baby Dress Artwork for Thailand’s Buyer",
+        category: "apparel",
+        categoryLabel: "International Export Garment",
+        client: "Thailand Apparel Buyer",
+        date: "September 2024",
+        summary: "Custom infant and kids’ dress surface pattern and chest placement motif tailored to international export compliance and playful pastel colorways.",
+        tags: ["Export Buyer", "Kids Apparel", "Repeat Pattern", "Textile Print"],
+        gradient: "from-rose-500/20 via-pink-500/10 to-stone-900",
+        accentColor: "#f43f5e",
+        icon: "fa-child-dress",
+        svgType: "babydress"
+      },
+      {
+        id: 3,
+        title: "TORR Ramp Show Programs & Brand Campaign",
+        category: "campaign",
+        categoryLabel: "Fashion Event & Promoter Campaign",
+        client: "TORR (Grow & Live) • Feat. Mishu Sabbir",
+        date: "September 2024",
+        summary: "Event stage graphics, ramp show program layouts, and brand promoter visual campaign featuring actor Mishu Sabbir under the theme 'Create Your Creativity Design'.",
+        tags: ["Event Identity", "Ramp Show", "Promoter Campaign", "Stage Backdrop"],
+        gradient: "from-purple-500/20 via-indigo-500/10 to-stone-900",
+        accentColor: "#a855f7",
+        icon: "fa-wand-magic-sparkles",
+        svgType: "event"
+      },
+      {
+        id: 4,
+        title: "Ramadan TVC Visuals — Fortis Downtown Resort",
+        category: "campaign",
+        categoryLabel: "Hospitality TVC & Promo",
+        client: "Fortis Downtown Resort",
+        date: "September 2024",
+        summary: "Broadcast and social media promotional visual direction, title cards, and hospitality campaign graphics created for Fortis Downtown Resort’s Ramadan TVC.",
+        tags: ["TVC Graphics", "Hospitality Branding", "Motion Layout", "Fortis Group"],
+        gradient: "from-emerald-500/20 via-teal-500/10 to-stone-900",
+        accentColor: "#10b981",
+        icon: "fa-film",
+        svgType: "resort"
+      },
+      {
+        id: 5,
+        title: "Jersey Design for Men & Women",
+        category: "apparel",
+        categoryLabel: "Sportswear & Sublimation",
+        client: "Athletic & Teamwear Collection",
+        date: "September 2024",
+        summary: "Ergonomic cut-and-sew sublimation jersey artwork designed for both men’s and women’s silhouettes with dynamic geometric mesh panels.",
+        tags: ["Sportswear", "Sublimation Print", "Activewear", "Unisex Fit"],
+        gradient: "from-sky-500/20 via-blue-500/10 to-stone-900",
+        accentColor: "#0ea5e9",
+        icon: "fa-person-running",
+        svgType: "jersey"
+      },
+      {
+        id: 6,
+        title: "Corporate Booking Form & Print System",
+        category: "branding",
+        categoryLabel: "Corporate Print & Identity",
+        client: "Fortis Group",
+        date: "September 2024",
+        summary: "Clean typographic layout and print-ready corporate booking documentation designed for Fortis Group to streamline guest registration and brand consistency.",
+        tags: ["Print Production", "Corporate Stationery", "Information Design", "Fortis Group"],
+        gradient: "from-stone-500/20 via-stone-700/20 to-stone-900",
+        accentColor: "#d97706",
+        icon: "fa-file-invoice",
+        svgType: "stationery"
+      },
+      {
+        id: 7,
+        title: "Brand Promoter Campaign — 'Mishu Sabbir'",
+        category: "campaign",
+        categoryLabel: "Celebrity Endorsement Visuals",
+        client: "TORR Fashion & Lifestyle",
+        date: "September 2024",
+        summary: "Key visual posters, social media promotional frames, and display banners featuring brand promoter Mishu Sabbir.",
+        tags: ["Brand Promoter", "Social Media Campaign", "Key Visual", "Poster Design"],
+        gradient: "from-amber-500/20 via-rose-500/10 to-stone-900",
+        accentColor: "#f59e0b",
+        icon: "fa-star",
+        svgType: "event"
+      },
+      {
+        id: 8,
+        title: "Signature Baby Dress Collection",
+        category: "apparel",
+        categoryLabel: "Custom Kids Fashion",
+        client: "In-House Signature Line",
+        date: "September 2024",
+        summary: "Original silhouette, fabric print harmony, and delicate embroidery/print placement artwork crafted for modern children’s wear.",
+        tags: ["Baby Dress", "Fashion Illustration", "Apparel Tech Pack", "Surface Design"],
+        gradient: "from-pink-500/20 via-rose-500/10 to-stone-900",
+        accentColor: "#ec4899",
+        icon: "fa-shirt",
+        svgType: "babydress"
+      },
+      {
+        id: 9,
+        title: "Basic & Minimalist T-Shirt Series",
+        category: "apparel",
+        categoryLabel: "Essential Casualwear",
+        client: "Retail Casualwear Line",
+        date: "September 2024",
+        summary: "Clean, timeless chest emblems and minimalist typographic graphics engineered for everyday retail knitwear collections.",
+        tags: ["Minimalist Print", "Casualwear", "Typography", "Knitwear"],
+        gradient: "from-teal-500/20 via-emerald-500/10 to-stone-900",
+        accentColor: "#14b8a6",
+        icon: "fa-shirt",
+        svgType: "tshirt"
+      }
+    ];
+
+    // Custom vector illustration generator for each project card
+    function getProjectSVG(type, color) {
+      if (type === "tshirt") {
+        return `
+          <svg class="w-28 h-28" viewBox="0 0 100 100" fill="none">
+            <path d="M30 20 L40 20 C43 26 57 26 60 20 L70 20 L88 34 L78 48 L68 41 L68 82 L32 82 L32 41 L22 48 L12 34 Z" stroke="${color}" stroke-width="2.5" fill="rgba(255,255,255,0.04)"/>
+            <circle cx="50" cy="48" r="11" stroke="${color}" stroke-width="2" stroke-dasharray="3 3"/>
+            <path d="M42 65 H58" stroke="${color}" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        `;
+      }
+      if (type === "babydress") {
+        return `
+          <svg class="w-28 h-28" viewBox="0 0 100 100" fill="none">
+            <path d="M38 22 H62 L66 38 L80 78 H20 L34 38 Z" stroke="${color}" stroke-width="2.5" fill="rgba(255,255,255,0.04)"/>
+            <path d="M34 38 Q50 45 66 38" stroke="${color}" stroke-width="2"/>
+            <circle cx="50" cy="56" r="5" fill="${color}" fill-opacity="0.5"/>
+          </svg>
+        `;
+      }
+      if (type === "event") {
+        return `
+          <svg class="w-28 h-28" viewBox="0 0 100 100" fill="none">
+            <rect x="18" y="22" width="64" height="56" rx="8" stroke="${color}" stroke-width="2.5" fill="rgba(255,255,255,0.04)"/>
+            <path d="M32 62 L50 32 L68 62 Z" stroke="${color}" stroke-width="2"/>
+            <circle cx="50" cy="28" r="3" fill="${color}"/>
+          </svg>
+        `;
+      }
+      if (type === "resort") {
+        return `
+          <svg class="w-28 h-28" viewBox="0 0 100 100" fill="none">
+            <rect x="16" y="24" width="68" height="48" rx="6" stroke="${color}" stroke-width="2.5" fill="rgba(255,255,255,0.04)"/>
+            <polygon points="44,38 44,58 60,48" fill="${color}"/>
+            <path d="M26 80 H74" stroke="${color}" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        `;
+      }
+      if (type === "jersey") {
+        return `
+          <svg class="w-28 h-28" viewBox="0 0 100 100" fill="none">
+            <path d="M32 18 L42 18 L50 26 L58 18 L68 18 L84 32 L74 46 L66 40 L66 82 L34 82 L34 40 L26 46 L16 32 Z" stroke="${color}" stroke-width="2.5" fill="rgba(255,255,255,0.04)"/>
+            <path d="M34 52 L66 38 M34 64 L66 50" stroke="${color}" stroke-width="2"/>
+          </svg>
+        `;
+      }
+      return `
+        <svg class="w-28 h-28" viewBox="0 0 100 100" fill="none">
+          <rect x="26" y="16" width="48" height="68" rx="5" stroke="${color}" stroke-width="2.5" fill="rgba(255,255,255,0.04)"/>
+          <path d="M36 32 H64 M36 44 H64 M36 56 H54" stroke="${color}" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      `;
+    }
+
+    // Render Projects Grid
+    function renderProjects(filter = "all") {
+      const grid = document.getElementById("projects-grid");
+      const filtered = filter === "all"
+        ? projectsData
+        : projectsData.filter(p => p.category === filter);
+
+      grid.innerHTML = filtered.map(project => `
+        <article onclick="openProjectModal(${project.id})" class="project-card cursor-pointer group rounded-3xl bg-[#FAF9F6] dark:bg-stone-900 border border-stone-200/90 dark:border-stone-800 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <!-- Artwork Canvas Header -->
+            <div class="relative h-52 bg-gradient-to-br ${project.gradient} bg-stone-900 flex items-center justify-center overflow-hidden p-6">
+              <div class="project-visual transition-transform duration-500">
+                ${getProjectSVG(project.svgType, project.accentColor)}
+              </div>
+              <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-medium bg-stone-950/70 text-stone-200 backdrop-blur border border-white/10">
+                ${project.categoryLabel}
+              </span>
+              <span class="absolute bottom-3 right-4 text-[11px] font-mono text-stone-300/80">
+                ${project.date}
+              </span>
+            </div>
+
+            <!-- Card Body -->
+            <div class="p-6">
+              <div class="text-xs font-medium text-amber-700 dark:text-amber-400 mb-1">${project.client}</div>
+              <h3 class="font-display font-bold text-lg text-stone-900 dark:text-white group-hover:text-amber-700 dark:group-hover:text-amber-400 transition-colors">
+                ${project.title}
+              </h3>
+              <p class="text-xs text-stone-600 dark:text-stone-400 mt-2.5 line-clamp-3 leading-relaxed">
+                ${project.summary}
+              </p>
+            </div>
+          </div>
+
+          <div class="px-6 pb-6 pt-3 border-t border-stone-200/60 dark:border-stone-800/80 flex items-center justify-between">
+            <div class="flex flex-wrap gap-1.5">
+              ${project.tags.slice(0, 2).map(tag => `
+                <span class="px-2 py-0.5 rounded-md bg-stone-200/70 dark:bg-stone-800 text-[10px] font-medium text-stone-700 dark:text-stone-300">${tag}</span>
+              `).join('')}
+            </div>
+            <span class="text-xs font-semibold text-stone-900 dark:text-white group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
+              Details <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </span>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    // Filter Button Click Handler
+    function filterProjects(category) {
+      document.querySelectorAll(".filter-btn").forEach(btn => {
+        if (btn.dataset.filter === category) {
+          btn.className = "filter-btn active px-4 py-2 rounded-xl text-xs font-semibold bg-stone-900 text-white dark:bg-amber-500 dark:text-stone-950 transition-all";
+        } else {
+          btn.className = "filter-btn px-4 py-2 rounded-xl text-xs font-semibold bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-700 transition-all";
+        }
+      });
+      renderProjects(category);
+    }
+
+    // Project Detail Modal Controls
+    function openProjectModal(id) {
+      const project = projectsData.find(p => p.id === id);
+      if (!project) return;
+
+      document.getElementById("modal-category").textContent = project.categoryLabel;
+      document.getElementById("modal-title").textContent = project.title;
+      document.getElementById("modal-client").textContent = `${project.client} • ${project.date}`;
+      document.getElementById("modal-description").textContent = project.summary;
+
+      const visualContainer = document.getElementById("modal-visual");
+      visualContainer.className = `w-full h-56 rounded-2xl overflow-hidden flex items-center justify-center bg-gradient-to-br ${project.gradient} bg-stone-900`;
+      visualContainer.innerHTML = getProjectSVG(project.svgType, project.accentColor);
+
+      document.getElementById("modal-tags").innerHTML = project.tags.map(t =>
+        `<span class="px-3 py-1 rounded-lg bg-stone-100 dark:bg-stone-800 text-xs font-medium text-stone-700 dark:text-stone-300">${t}</span>`
+      ).join('');
+
+      const modal = document.getElementById("project-modal");
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+    }
+
+    function closeProjectModal() {
+      const modal = document.getElementById("project-modal");
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+
+    // Resume Modal Controls
+    function openResumeModal() {
+      const modal = document.getElementById("resume-modal");
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+    }
+
+    function closeResumeModal() {
+      const modal = document.getElementById("resume-modal");
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+
+    // Toast Helper
+    let toastTimer;
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      const msg = document.getElementById("toast-message");
+      msg.textContent = message;
+      toast.classList.remove("translate-y-24", "opacity-0");
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.add("translate-y-24", "opacity-0");
+      }, 3200);
+    }
+
+    // Copy to Clipboard using execCommand fallback for iframe compatibility
+    function copyText(text, notificationMessage) {
+      const tempInput = document.createElement("textarea");
+      tempInput.value = text;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      try {
+        document.execCommand("copy");
+        showToast(notificationMessage || "Copied to clipboard!");
+      } catch (err) {
+        showToast("Copy completed");
+      }
+      document.body.removeChild(tempInput);
+    }
+
+    // Contact Form Submission Handler
+    function handleContactSubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const subject = document.getElementById("subject").value;
+      showToast(`Thank you, ${name}! Your "${subject}" inquiry is ready.`);
+      event.target.reset();
+    }
+
+    // Dark / Light Theme Toggle
+    const themeToggleBtn = document.getElementById("theme-toggle");
+    const themeIcon = document.getElementById("theme-icon");
+
+    function setTheme(isDark) {
+      if (isDark) {
+        document.documentElement.classList.add("dark");
+        themeIcon.className = "fa-solid fa-sun text-sm text-amber-400";
+      } else {
+        document.documentElement.classList.remove("dark");
+        themeIcon.className = "fa-solid fa-moon text-sm";
+      }
+    }
+
+    themeToggleBtn.addEventListener("click", () => {
+      const isDark = !document.documentElement.classList.contains("dark");
+      setTheme(isDark);
+    });
+
+    // Mobile Menu Drawer Toggle
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const mobileMenuIcon = document.getElementById("mobile-menu-icon");
+
+    mobileMenuBtn.addEventListener("click", () => {
+      const isHidden = mobileMenu.classList.contains("hidden");
+      if (isHidden) {
+        mobileMenu.classList.remove("hidden");
+        mobileMenuIcon.className = "fa-solid fa-xmark text-base";
+      } else {
+        mobileMenu.classList.add("hidden");
+        mobileMenuIcon.className = "fa-solid fa-bars text-base";
+      }
+    });
+
+    document.querySelectorAll(".mobile-nav-link").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        mobileMenuIcon.className = "fa-solid fa-bars text-base";
+      });
+    });
+
+    // Close modals when clicking backdrop
+    window.addEventListener("click", (e) => {
+      const projectModal = document.getElementById("project-modal");
+      const resumeModal = document.getElementById("resume-modal");
+      if (e.target === projectModal) closeProjectModal();
+      if (e.target === resumeModal) closeResumeModal();
+    });
+
+    // Initialize on load
+    window.onload = function () {
+      document.getElementById("year").textContent = new Date().getFullYear();
+      renderProjects("all");
+    };
+  </script>
+</body>
+</html>
